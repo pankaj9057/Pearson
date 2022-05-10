@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Pearson
     - name: Build
       run: dotnet build --project:Pearson
     - name: Test
