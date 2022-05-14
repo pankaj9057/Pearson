@@ -14,10 +14,11 @@ var numberInputForFibSeries = Console.ReadLine();
 Console.WriteLine($"Fibonacci series for {numberInputForFibSeries} is : {fibonacci.Fib(Convert.ToInt32(numberInputForFibSeries))}");
 
 var coinChange =  new Pearson.CoinChange();
- Console.WriteLine("Enter the amount (in pence) you want to change : ");
- var amount = Convert.ToInt32(Console.ReadLine());
-  Console.WriteLine($"Change for {amount}p is :");
- foreach(var item in coinChange.GenerateCoinChange(amount))
+Console.WriteLine("Enter the amount (in pence) you want to change : ");
+var amount = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Change for {amount}p is :");
+ 
+foreach(var item in coinChange.GenerateCoinChange(amount))
  {
     Console.WriteLine(item);
  }

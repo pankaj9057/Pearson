@@ -9,7 +9,7 @@ public class Palindrome
 
         Array.Reverse(arr);
 
-        string temp   = new string(arr);
+        string temp   = new(arr);
         string second = temp.Substring(0, temp.Length / 2);
 
         return first.Equals(second);
