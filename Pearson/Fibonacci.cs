@@ -3,14 +3,14 @@ namespace Pearson;
 
 public class Fibonacci
 { 
-    public string Fib(int max)
+    public static string Fib(int max)
     {
         if(max<=0)
         {
             return "0";
         }
         int i = 0;
-        StringBuilder result = new StringBuilder();
+        StringBuilder? result = new();
 
         for (int j = 1; j <= max; j += i)
         {

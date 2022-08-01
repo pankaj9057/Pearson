@@ -2,7 +2,7 @@
  namespace Pearson;
  public class CoinChange
  {
-    public IList<string> GenerateCoinChange(int amount)
+    public static IList<string> GenerateCoinChange(int amount)
     {
         var list = new List<string>();
         int[] coins = {100,50,20, 10, 5,2, 1 };

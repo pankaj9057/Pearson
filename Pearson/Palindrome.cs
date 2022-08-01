@@ -2,7 +2,7 @@ namespace Pearson;
 
 public class Palindrome
 {
-    public bool StringIsPalindromeStatus(string inputString)
+    public static bool StringIsPalindromeStatus(string inputString)
     {
         string first = inputString.Substring(0, inputString.Length / 2);
         char[] arr   = inputString.ToCharArray();
